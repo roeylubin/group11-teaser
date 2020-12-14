@@ -1,8 +1,19 @@
-body{
-    /* background-image: url(img/bg.png); */
-    background-size: cover;
+body { 
+    background-image: url(img/teaser.png);
+    background-repeat: no-repeat;
     background-attachment: fixed;
-}
+    background-position: center; 
+  }
+
+@media only screen and (max-width: 700px) {
+    body { 
+        background-image: url(img/mobile.png);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center; 
+        background-size: 100%;
+      }
+
 #window {
   position: absolute;
   z-index: 9;
