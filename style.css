@@ -16,12 +16,12 @@ body {
         background-position: center; 
         background-size: 100%;
       }
-
-
+}
 
 html, body {
-    cursor: url(cursor.png), default;
+    cursor: url(img/arrow.cur), default;
 }
+
 
   @font-face {
     font-family: 'Windows 95';
