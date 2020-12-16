@@ -1,36 +1,65 @@
-body { 
-    background-image: url(img/teaser.jpg);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center; 
-    background-size: 102%;
-    background-color: #008083;
-  }
-
-
-@media only screen and (max-width: 1000px) {
-    body { 
-        background-image: url(img/teaserm.jpg);
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-position: center; 
-        background-size: 100%;
-      }
-    
-      .mobile{
-        display: block;
-    }
-}
-
-html, body {
-    cursor: url(img/arrow.cur), default;
-}
-
-
-  @font-face {
+@font-face {
     font-family: 'Windows 95';
     src: url('/fonts/levenim/levenim.ttf') 
         url('../fonts/w-95-sans-serif.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
+
+html, body {
+    cursor: url(img/arrow.cur), default;
+}
+
+body { 
+    background-color: #008083;
+  }
+
+/* desktop */
+
+@media (min-width: 1000px){
+
+.mobile-container{
+    display: none;
+}
+
+#desktop{
+    max-width: 800px;
+}
+
+.desktop-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 20vh;
+}
+}
+
+/* mobile */
+
+@media only screen and (max-width: 1000px) {
+   
+    .mobile-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        top: 18vh;
+    }
+    #desktop{
+        display: none;
+    }
+
+    #mobile{
+        max-width: 700px;
+
+    }
+
+    /* .vertical-center {
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+      } */
+}
+
+
