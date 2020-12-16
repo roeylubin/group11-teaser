@@ -4,6 +4,7 @@ body {
     background-attachment: fixed;
     background-position: center; 
     background-size: 102%;
+    background-color: #008083;
   }
 
 
@@ -19,10 +20,8 @@ body {
 
 
 html, body {
-    cursor: url(cursor.cur), default;
+    cursor: url(cursor.png), default;
 }
-
-
 
   @font-face {
     font-family: 'Windows 95';
