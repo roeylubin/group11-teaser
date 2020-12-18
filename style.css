@@ -30,7 +30,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    top: 20vh;
+    top: 17vh;
 }
 }
 
@@ -47,6 +47,10 @@ body {
     #desktop{
         display: none;
     }
+
+    .dlink{
+        display: none;
+    }   
 
     #mobile{
         max-width: 700px;
